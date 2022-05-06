@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+</head>
+
+    <style>
+
+        .estilo {
+
+            font-family: cursive;
+            text-align: center;
+        }
+    
+    </style>
+
+<body class="estilo">
+
+   
+
+    <p><h1>Calculando o seu Índice de Massa Corporal (IMC)</h1></p>
+    
+    <p><h2>Resultado:</h2></p>
+
+    <h2><script>
+
+        var peso = prompt("Qual o seu peso atual em kg? (Exemplo: 55; 70; 85)");
+        var altura = prompt("Qual a sua altura atual em m? (Exemplos: 1.50; 1.75; 1.90)")
+
+        var imc = peso / (altura * altura);
+
+        imc = Math.round(imc * 100) / 100;
+
+        document.write("O seu IMC é: " + imc);
+
+    </script></h2>
+
+</body>
+</html>
